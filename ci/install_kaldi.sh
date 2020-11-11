@@ -13,5 +13,5 @@ set -euo pipefail
 # download pre-built kaldi binary
 # TODO(karita) support non ubuntu env
 [ ! -e ubuntu16-featbin.tar.gz ] && wget --tries=3 https://github.com/espnet/kaldi-bin/releases/download/v0.0.1/ubuntu16-featbin.tar.gz
-tar -xf ./ubuntu16-featbin.tar.gz
+tar -xvf ./ubuntu16-featbin.tar.gz
 cp featbin/* tools/kaldi/src/featbin/
